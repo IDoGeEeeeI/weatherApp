@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="387.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com2.Controller2">
+   <children>
+      <AnchorPane prefHeight="105.0" prefWidth="750.0" style="-fx-background-color: #fff;">
+         <children>
+            <TextField fx:id="enterText" layoutX="24.0" layoutY="22.0" prefHeight="54.0" prefWidth="242.0" style="-fx-border-color: #000000; -fx-border-radius: 5;" text="enter city" />
+            <Text layoutX="269.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Label fx:id="cityAndTime" layoutX="356.0" layoutY="34.0" prefHeight="30.0" prefWidth="258.0">
+               <font>
+                  <Font name="Galvji" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="65.0" fitWidth="100.0" layoutX="283.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../3.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="dayInfo" layoutX="582.0" layoutY="75.0" prefHeight="30.0" prefWidth="139.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="97.0" prefHeight="133.0" prefWidth="750.0" style="-fx-background-color: #fff;">
+         <children>
+            <HBox layoutY="30.0" prefHeight="65.0" prefWidth="750.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="24.21630859375" />
+                  <HBox prefHeight="65.0" prefWidth="97.0">
+                     <children>
+                        <Text fx:id="night" strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <ImageView fx:id="nightImage" fitHeight="65.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../weather-meteorology-climate-flat-icon-set-includes-sun-cloud-snow-rain_156062-79.jpg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="nightDeg" layoutX="12.0" layoutY="24.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.21630859375" />
+                  <HBox prefHeight="65.0" prefWidth="97.0">
+                     <children>
+                        <Text fx:id="morning" strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <ImageView fx:id="morningImage" fitHeight="65.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../2.jpg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="morningDeg" layoutX="12.0" layoutY="24.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="65.0" prefWidth="97.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.21630859375" />
+                        <Text fx:id="day" strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <ImageView fx:id="dayImage" fitHeight="65.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../2.jpg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="dayDeg" layoutX="12.0" layoutY="24.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="65.0" prefWidth="97.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.21630859375" />
+                        <Text fx:id="evening" strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <ImageView fx:id="eveningImage" fitHeight="65.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../2.jpg" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="eveningDeg" layoutX="12.0" layoutY="24.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="227.0" prefHeight="160.0" prefWidth="750.0" style="-fx-background-color: #fff;">
+         <children>
+            <HBox prefHeight="160.0" prefWidth="750.0" style="-fx-background-color: #fff;">
+               <children>
+                  <VBox prefHeight="160.0" prefWidth="90.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="160.0" prefWidth="191.0">
+                     <children>
+                        <Text fx:id="temperature" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.0">
+                           <font>
+                              <Font name="Andale Mono" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="pressure" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.0">
+                           <font>
+                              <Font name="Andale Mono" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="humidity" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.0">
+                           <font>
+                              <Font name="Andale Mono" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="wind" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.0">
+                           <font>
+                              <Font name="Andale Mono" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="clouds" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.0">
+                           <font>
+                              <Font name="Andale Mono" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="160.0" prefWidth="90.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="160.0" prefWidth="204.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Text fx:id="sunrise" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.0">
+                           <font>
+                              <Font name="Andale Mono" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="sunset" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="220.0">
+                           <font>
+                              <Font name="Andale Mono" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
